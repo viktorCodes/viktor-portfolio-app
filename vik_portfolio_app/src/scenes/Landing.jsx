@@ -8,10 +8,10 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-10 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-2/5 z-10  md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="hover:filter hover:saturate-200 transition duration-500     z-10 w-full max-w-[400px] md:max-w-[600px]"
             src="assets/profile-image.png"
           />
         )}
@@ -55,9 +55,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          <p className="mt-10 mb-7 text-md text-center md:text-start">
+          “If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.” Martin Luther King, Jr.
           </p>
         </motion.div>
 
