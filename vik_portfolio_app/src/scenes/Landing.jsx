@@ -8,10 +8,10 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-10 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-10 md:h-full "
     >
       {/* IMAGE SECTION */}
-      <div className="basis-2/5 z-10  md:mt-32 flex justify-center md:order-2">
+      <div className="basis-1/3 z-10  md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -19,21 +19,21 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500     z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
+              className="hover:filter hover:saturate-200 transition duration-500  z-10 w-full max-w-[400px] md:max-w-[600px]"
+              src="assets/profile-image.jpg"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500     z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+            src="assets/profile-image.jpg"
           />
         )}
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-1/3 mt-10 md:mt-32">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
